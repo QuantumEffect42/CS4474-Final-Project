@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import{createBrowserRouter, RouterProvider, } from "react-router-dom"
+import{createHashRouter, RouterProvider, } from "react-router-dom"
 import LearnBSTPage from './components/pages/learning/BinarySearchTree';
 import LearnAVLPage from './components/pages/learning/AVLTree';
 import LearnRBPage from './components/pages/learning/RBTree';
@@ -26,7 +26,7 @@ import BPlusQuizHard from './components/pages/quiz/B+QuizHard';
 import BSTQuizHard from './components/pages/quiz/BSTQuizHard';
 import RBQuizHard from './components/pages/quiz/RBQuizHard';
  
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />
