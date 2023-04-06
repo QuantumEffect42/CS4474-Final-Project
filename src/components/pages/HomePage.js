@@ -12,7 +12,7 @@ const Home = () => {
                 <div className="welcome-1">
                     <h2 className="intro">Easy Free Data Structures Lessons</h2>
                     <p className="title-text">
-                        Learn data strucutres and the algorithms behind in an easy to digest way. Experiment
+                        Learn data structures and the algorithms behind them in an easy to digest way. Experiment
                         with our visualizers, quizes and lessons to learn at your own pace.
                     </p>
                 </div>
