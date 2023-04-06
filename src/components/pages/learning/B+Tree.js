@@ -22,9 +22,9 @@ const LearnBPlus = () =>{
                     <div className="Intro">
                         <h2 id="BPlus-Intro">Introduction</h2>
                         <p>
-                            A B+ tree is a prety advanced form of a self-balancing tree where every value is present at the leaf level.
+                            A B+ tree is a pretty advanced form of a self-balancing tree where every value is present at the leaf level.
                             Additionally, all the leaf nodes will be in order from left to right by their values with pointers also
-                            moving from the leftmost node to it's neighbour node.
+                            moving from the left leaf node to it's right neighbour leaf node.
                         </p>
                         <p>
                             These trees are quite important to understand since they are used quite often with databases since it allows
@@ -120,10 +120,10 @@ const LearnBPlus = () =>{
                                 If the leaf is full, insert the value into the leaf in increasing order then perform the following steps to balance.
                                 <ul>
                                     <li>
-                                        Break the leaf node in the middle floor(m/2th position).
+                                        Break the leaf node in the middle [floor(m/2th position)].
                                     </li>
                                     <li>
-                                        Also add the middle value from the leaf floor(m/2th key) to the parent node.
+                                        Also add the middle value from the leaf [floor(m/2th key)] to the parent node.
                                     </li>
                                     <li>
                                         Repeat the above if the above steps if the parent is also full until the tree is balanced.
@@ -171,7 +171,7 @@ const LearnBPlus = () =>{
 
                         <p>
                             The time complexity of this algorithm is a bit more complex since the nodes can contain more than 2 children,
-                            unlike many other trees. We will say that the B+ we are analysing has a degree of <i>t</i>, meaning that it can
+                            unlike many other trees. We will say that the B+ we are analysing has an order of <i>t</i>, meaning that it can
                             have at most <i>t</i> children. Once again, the majority of time that we spend in this algorithm is dominated
                             by searching for the correct place to insert our node. Since these trees are balanced, we know that when we
                             move down a level to find the correct position, we are only using 1/<i>t</i> of the total number of nodes in
@@ -290,7 +290,7 @@ const LearnBPlus = () =>{
                                 <figure>
                                     <img src="https://cdn.programiz.com/sites/tutorial2program/files/deletion-4-b+tree.png" alt="B+ Tree Deletion 5" className="center"></img>
                                     <figcaption>
-                                        Here, we can delete key 35 by removing it from bothe the leaf and the internal node. We then split the node containing 25 and 30
+                                        Here, we can delete key 35 by removing it from both the leaf and the internal node. We then split the node containing 25 and 30
                                         apart since they shared a parent with the leaf node containing 35. We then replace the space where 35 was in the internal node with
                                         30.
                                     </figcaption>
@@ -302,7 +302,7 @@ const LearnBPlus = () =>{
                                 for the leaf, we use this case. Once we delete this key from the leaf, we can merge the space with it's sibling key.
                                 Then, we can fill the empty space in the grandparent node with the next key from the leaves.
                                 <figure>
-                                    <img src="https://cdn.programiz.com/sites/tutorial2program/files/deletion-5-b+tree.png" alt="B+ Tree Deletion 6" className="center"></img>
+                                    <img src="v" alt="B+ Tree Deletion 6" className="center"></img>
                                     <figcaption>
                                         Here, we can delete key 25 by removing it from the leaves, then sending 30 to fill the space left 25 at the root.
                                     </figcaption>
@@ -327,7 +327,7 @@ const LearnBPlus = () =>{
 
                         <p>
                             Here, you can see that we resolve the situation by moving the root down to the other child node that doesn't disappear.
-                            We then adjust the pointers to the leaves and the height of the tree has shrunk by 1 while remaining mostly intact.
+                            We then adjust the pointers to the leaves and the height of the tree has shrunk by 1 while remaining intact.
                         </p>
                         <br />
 

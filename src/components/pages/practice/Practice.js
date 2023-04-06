@@ -26,7 +26,7 @@ export default class PracticePage extends React.Component{
 
                     <p>
                         The visualizer tool is one of the best ways to apply what we learned in the learning pages to get familiar with the data structures
-                        themselves. The tool will elevate you learning experience and aid with the matieral more in-depth. You can choose from a list of data
+                        themselves. The tool will elevate your learning experience and aid with the matieral more in-depth. You can choose from a list of data
                         structures we have visualizers for just down below. Once you choose which visualizer you want to open, a new tab will be opened in
                         the browers for you to start exploring!
                     </p>
@@ -39,7 +39,7 @@ export default class PracticePage extends React.Component{
                     <ul>
                         <li>
                             <b>Inserting:</b> <br/>
-                            you can insert one or multiple elements separated by a comma (,) or a space( ). It's important that there are no other characters
+                            You can insert one or multiple elements separated by a comma (,) or a space( ). It's important that there are no other characters
                             besides numbers and the separators. Additionally, the last character should be a number as well. <br />
                             There may be a case, if the list of inputs is too large, that the lines between the nodes might become incorrect. If this happens,
                             it would be best to split the inputs into smaller sections and try the insertion once again. <br />
@@ -50,7 +50,7 @@ export default class PracticePage extends React.Component{
                         <li>
                             <b>Deletion:</b> <br />
                             When we want to delete elements from the table, we can only do so one at a time. This means that only a single number can be
-                            input into the box at any one time <br />
+                            input into the box at any one time. <br />
                             You can take a look at the gif below to see how you can delete a node from the AVL tree visualizer as an example:
 
                             <img className="gif" src={vis3} alt="vis3"></img>
@@ -86,7 +86,7 @@ export default class PracticePage extends React.Component{
                                 <li>
                                     <b>Animation Speed:</b> <br />
                                     You can change the animation speed using the slider to speed up and slow down the entire animation process. <br />
-                                    Sometimes, the animation speed might be a bit buggy, so we recommend using an animation speed of 75 for best results. <br />
+                                    Sometimes, the animation speed might be a bit buggy due to the original implementation, so we recommend using an animation speed of 75 for best results. <br />
                                     Take a look at the gif below to see an example of this with the AVL tree visualizer:
 
                                     <img className="gif" src={vis7} alt="vis7"></img>
@@ -96,7 +96,7 @@ export default class PracticePage extends React.Component{
                                     Instead of removing nodes from our tree one by one to clear the canvas, we can hit the reset button to clear the entire
                                     canvas automatically. A prompt will show up just to make sure you want to delete everything where you can back out if
                                     there's a misclick, or proceed to remove all elements.<br />
-                                    take a look at the gif below to see this in action:
+                                    Take a look at the gif below to see this in action:
 
                                     <img className="gif" src={vis8} alt="vis8"></img>
                                 </li>

@@ -47,14 +47,14 @@ const LearnAVLPage = () =>{
                         </p>
                         <br />
                         <p>
-                            This propert in AVL trees should ALWAYS be -1, 0 or 1. so that the tree remains
+                            This propert in AVL trees should ALWAYS be -1, 0 or 1 so that the tree remains
                             balanced. If we were inserting or deleting nodes from this tree and that operation
                             caused the balance factor of one of the nodes to become a value other than -1, 0, or 1 
                             we would have to perform a rotation of some kind to rebalance the tree.
                         </p>
                         <p>
                             Below we will cover the various rotations we might encounter when trying to rebalance
-                            an AVL tree
+                            an AVL tree:
                         </p>
                         <br />
 
@@ -282,7 +282,7 @@ const LearnAVLPage = () =>{
                         <ul>
                             <li>
                                 We can use the same insertion method we used for Binary Search Trees to insert the node here.
-                                We move left if the node we want to insert is less than the current node, and more right if
+                                We move left if the node we want to insert is less than the current node, and move right if
                                 the node we want to insert is greater than the current node. We do this until we reach the
                                 position where the node we want to insert will be stored. In the case of our node 9. It will
                                 be placed to the right of the Node containing 8. Additionally, when we insert a node in an AVL
@@ -300,7 +300,7 @@ const LearnAVLPage = () =>{
                             <li>
                                 We then update the balance factors of each of the nodes. We update them so that the balance
                                 factor of a node is positive if the height of the left subtree is greater than height of the 
-                                right subtree, the balance factor of a node is negative if the height of the right subtree is
+                                right subtree, and the balance factor of a node is negative if the height of the right subtree is
                                 greater than the height of the left subtree.<br />
                                 The image below shows the updated balance factors for our tree after inserting Node 9.
                             </li>
@@ -382,12 +382,12 @@ const LearnAVLPage = () =>{
                         <p>There are a few cases that we need to consider when deleting nodes just like we did with Binary Search Trees</p>
                         <ul>
                             <li>
-                                If the node we want to delete is a leaf ndoe, then we simply remove the node.
+                                If the node we want to delete is a leaf node, then we simply remove the node,
                             </li>
                             <br />
                             <li>
                                 If the node we want to delete has one child, we copy all the elements from the child node to the parent
-                                and remove the duplicate child node aftwarards.
+                                and remove the duplicate child node aftwarards,
                             </li>
                             <br />
                             <li>
@@ -441,7 +441,7 @@ const LearnAVLPage = () =>{
                         <figure>
                             <img src="https://www.programiz.com/sites/tutorial2program/files/avl-tree-final-tree-1_0_2.png" alt="Delete 4" className="center"></img>
                             <figcaption>
-                                Final Tree after performing a right rotation on Nodes 9 and 21 and recalcuating the balance factors.
+                                Final tree after performing a right rotation on Nodes 9 and 21 and recalcuating the balance factors.
                             </figcaption>
                         </figure>
                         <br />
@@ -449,7 +449,7 @@ const LearnAVLPage = () =>{
                         <p>
                             Much like with the insertion algorithm, the majority of time this runs is taken up by mostly finding the correct
                             node to delete. Since we know that the tree is balanced and can't degenerate into a Linked-List, we know that
-                            every time we move down a level, to find the node we want to delete, we are discarding half of the remaining nodes
+                            every time we move down a level to find the node we want to delete, we are discarding half of the remaining nodes
                             at each level. If the node we want to delete is a leaf node, then we will get a time complexity for the algorithm
                             of <code>O(log<sub>2</sub>(n))</code>.
                         </p>

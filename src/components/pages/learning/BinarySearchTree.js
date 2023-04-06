@@ -25,14 +25,14 @@ const LearnBSTPage = () =>{
                             <br />
                         <p> 
                             It is called "Binary" since each node in the tree can have at most 2 children, and it is called a search tree since
-                            since it can be used to search for a specific node in <code>O(log(n))</code> time.</p>
+                            it can be used to search for a specific node in <code>O(log(n))</code> time on average.</p>
                         <br />
                         <p>There are some basic rules of binary search trees that we need to remember going forward: </p>
                         <br />
                         <ul>
-                            <li>Every ndoe in the left subtree of the root are less than the root</li>
-                            <li>Every node in the right subtree of the root are greater than the root</li>
-                            <li>Both subtrees of a node are also subtrees, meaning that binary search trees are recursive structures</li>
+                            <li>Every node in the left subtree of the root is less than the root,</li>
+                            <li>Every node in the right subtree of the root is greater than the root,</li>
+                            <li>Both subtrees of a node are also subtrees, meaning that binary search trees are recursive structures.</li>
                         </ul>
                         <br />
                         <p>Below you can see an example of a valid binary tree on the left, and an invalid binary tree on the right:</p> 
@@ -82,17 +82,17 @@ const LearnBSTPage = () =>{
                         <br />
                         <p>
                             We first pass in the root node of the tree and check if it is the value we are searching for. If it is, we simply return the value in the node.
-                            We also check if the root node is null, which would happen when there is no data stored in the tree, if it is null, we simply return null. We then
+                            We also check if the root node is null, which would happen when there is no data stored in the tree, in which case, we simply return null. We then
                             start checking if the value is less than or greater than the value of the root node. If it is less than the root node, we call the function again
                             this time passing in the left child of the root node as the new root. We mentioned above that all subtrees in a Binary Search Tree are also
                             Binary Search Trees, meaning we can simply call the algorithm again when searching the left or right subtrees and it will work without any issues.
-                            When we do eventually find the value we are looking for, we return the data stored in the node and this will be propogated through the recursive
+                            When we do eventually find the value we are looking for, we return the data stored in the node and this will be propogated back through the recursive
                             algorithm. 
                         </p>
                         <br />
                         <p>
                             If, however, the value we are looking for isn't in the tree, then we will eventually get to a leaf. Then, the next time we call the algorithm, we
-                            will pass in a null value as the new root, meaning that a null value is going to be propogated through and returned by the function.
+                            will pass in a null value as the new root, meaning that a null value is going to be propogated back through and returned by the function.
                         </p>
                             <br />
                         <p>Here you can see an animation of searching for the node 27 in a Binary Search Tree:</p>
@@ -115,7 +115,7 @@ const LearnBSTPage = () =>{
                             the tree has degenerated into a Linked-List. This means that if we wanted to consider the worst case time complexity of a Binary Search Tree, we
                             need to use this case. If there are <i>n</i> nodes in the tree, and the tree has degenerated into a Linked-List,
                             then we know that the height of the tree, <i>h</i> = <i>n</i>. Thus, the worst case time complexity for the search algorithm is <code>O(h)</code>,
-                            since the node we might be searching for could be at the very bottom of the tree.
+                            since the node we might be searching for could be a leaf.
                         </p>
 
                         <br />
@@ -126,7 +126,7 @@ const LearnBSTPage = () =>{
                     <div className="Inserting">
                         <h2 id="BST-Insert">Insertion</h2>
                         <p>
-                            Now that we've got a hang of seraching, we can move on to inserting, which is very similar since we want to make sure we retain the properties
+                            Now that we've got a hang of searching, we can move on to inserting, which is very similar since we need to make sure we retain the properties
                             we discussed above: 
                         </p>
                         <ul> 
@@ -252,11 +252,11 @@ const LearnBSTPage = () =>{
                         <br />
 
                         <h3 id="BST-Case3">Scenario 3</h3>
-                        <p>The third and final case we will consider is when the node we want to dlete has 2 child nodes.</p>
+                        <p>The third and final case we will consider is when the node we want to delete has 2 child nodes.</p>
                         <p>When this is the case, we follow these below steps:</p>
                         <ul>
-                            <li>Get smallest element from the right subtree of the node.</li>
-                            <li>Replace the node we want to delete with this node.</li>
+                            <li>Get smallest element from the right subtree of the node,</li>
+                            <li>Replace the node we want to delete with this node,</li>
                             <li>Remove the duplicate node from the tree.</li>
                         </ul>
                         <br />

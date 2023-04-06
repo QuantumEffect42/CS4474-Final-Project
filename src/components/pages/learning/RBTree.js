@@ -27,7 +27,7 @@ const LearnRBPage = () =>{
                             root node has no parent value.
                         </p>
                         <p>
-                            In order for a tree to be considered a Red-Black Tree, the tree needs to use the following 5
+                            In order for a tree to be considered a Red-Black Tree, the tree needs to have the following 5
                             properties:
                         </p>
                         <ul>
@@ -44,7 +44,7 @@ const LearnRBPage = () =>{
                                 Red Property: If a red node has children, then those children are always coloured black.
                             </li>
                             <li>
-                                Depth Property: For every node in the tree, a simple path from this node to any of the leafs
+                                Depth Property: For every node in the tree, a simple path from this node to any of the leaves
                                 in its subtrees has the same number of black nodes (black-depth).
                             </li>
                         </ul>
@@ -279,7 +279,7 @@ const LearnRBPage = () =>{
                         <p>Initially when we insert a new node into a Red-Black tree, this new node will always be coloured
                             red. Once we use the standard Binary Search Tree insertion and insert the new red node, we need
                             to check if the tree still holds to all the properties of Red-Black tress we outlined at the
-                            beginning of this section. If we find that one or more of the properties are being violted,
+                            beginning of this section. If we find that one or more of the properties are being violated,
                             we need to perform a recolour and then some rotation.
                         </p>
                         <p>
@@ -288,7 +288,7 @@ const LearnRBPage = () =>{
                         </p>
                         <ul>
                             <li>
-                                First, check if the tree is empty. If it is empty, isnert the newnode as the root and colour
+                                First, check if the tree is empty. If it is empty, insert the new node as the root and colour
                                 it black.
                             </li>
                             <li>
@@ -388,9 +388,6 @@ const LearnRBPage = () =>{
                                         Replace the node we want to delet with it's right child. Meaning that the parent of the node
                                         we wanted to delete will now connect with it's right child.
                                     </li>
-                                    <li>
-
-                                    </li>
                                 </ul>
                             </li>
                             <li>
@@ -402,7 +399,7 @@ const LearnRBPage = () =>{
                                     </li>
                                     <li>
                                         Replace the node we want to delete with it's left child. Meaning that the parent of the node
-                                        we wanted to delete will now connect with it's left child
+                                        we wanted to delete will now connect with it's left child.
                                     </li>
                                 </ul>
                             </li>
@@ -496,7 +493,7 @@ const LearnRBPage = () =>{
                             <li>
                                 <b>Case 4:</b><br />
                                 When W is black, and the right child of W is red.<br />
-                                If we do type 3, then we will have to 2 type 4 as well.
+                                If we do type 3, then we will have to do type 4 as well.
                                 <ul>
                                     <li>
                                         Change W to the same colour as it's parent.
