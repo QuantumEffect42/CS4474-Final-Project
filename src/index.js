@@ -32,7 +32,7 @@ const router = createHashRouter([
     element: <App />
   },
   {
-    path: "/LearnBST",
+    path: "/CS4474-Final-Project/LearnBST",
     element: <LearnBSTPage />
   },
   {
