@@ -1,0 +1,38 @@
+.Page-Container{
+    background-color: #f9fbff;
+}
+
+.button-bar{
+    display: flex;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.visualizer{
+    width: 200px;
+    height: 50px;
+    background-color: lightskyblue;
+    margin: auto;
+    border-radius: 10%;
+}
+
+.visualizer:hover{
+    background-color: lightgoldenrodyellow;
+}
+
+.gif{
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+.documentation{
+    padding: 5px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}

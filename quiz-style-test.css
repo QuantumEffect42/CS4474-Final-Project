@@ -1,0 +1,201 @@
+h1{
+	font-size: 48;
+	text-align: center;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	width:100vw;
+	height: 100vh;
+	position:center;
+}
+
+.panel{
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: center;
+}
+.question-container{
+	margin: 10px;
+	padding: 5px;
+	width: 80vw;
+	height: 10vh;
+	background-color: #c7dddf;
+	font-size: x-large;
+	text-align: center;
+	position: center;
+	justify-content: center;
+}
+.result{
+	margin: 10px;
+	padding: 5px;
+	width:80vw;
+	height: 6vh;
+	text-align: center;
+	font-size: 50px;
+	
+}
+.option-container{
+	display: flex;
+	justify-content: space-around;
+	margin: 10px;
+	padding: 5px;
+	width: 80vw;
+	height: 20vh;
+	background-color: #9eb1b3;
+	align-items: center;
+	position: relative;
+}
+.option{
+	padding: 10px;
+	width: 15vw;
+	height: 10vh;
+	font-size: larger;
+	background-color: lightskyblue;
+	border-radius: 25%;
+	align-items: center;
+	position: center;
+}
+.option:hover{
+	background-color: lightgoldenrodyellow;
+}
+.navigation{
+	width: 80vw;
+	height: 10vh;
+	margin: 10px;
+	padding: 5px;
+	display: flex;
+	justify-content: space-around;
+	background-color:#c7dddf;
+    align-items: center;
+	position: relative;
+}
+
+.back, .evaluate, .next{
+	width:18vw;
+	height: 8vh;
+	padding: 5px;
+	font-size: larger;
+}
+.evaluate{
+	background-color: #50DBB4;
+}
+.next{
+	color: white;
+	background-color: #BF3325;
+}
+
+.back{
+    color: black;
+    background-color: #c7dddf;
+}
+
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position: absolute;
+}
+
+.img-magnifier-glass {
+  position: relative;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
+
+/* style for the DIV that holds the image pair */
+.magnifier {
+	overflow: hidden;
+	position: relative;
+  }
+  
+/* style for the DIV that is the magnifier lens */
+.maglens {
+position: absolute;
+overflow: hidden;
+width: 150px;
+height: 150px;
+}
+  
+/* style for the small IMG that appears on the page */
+.magsmall {
+position: absolute; 
+border-style: none
+}
+
+/* style for the magnified image, using a clip rectangle */
+.maglarge {
+position: absolute; 
+border-style: none
+}
+
+/* The switch - the box around the slider */
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* The slider */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #2196F3;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+  
+  

@@ -1,0 +1,93 @@
+.Page-Container{
+    background-color: #f9fbff;
+}
+
+.Page-Content{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.utility{
+    position: sticky;
+    top: 0px
+}
+
+p{
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 14pt;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+h2{
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+h3{
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+code{
+    background: rgb(64,60,68);
+    color: whitesmoke;
+    font-family: Droid Sans Mono, monospace;
+    border-radius: 4px;
+    tab-size: 4;
+}
+
+pre{
+    background-color: rgb(64,60,68);
+    tab-size: 4;
+}
+
+ul{
+    margin-left: 30px;
+    font-size: 14pt;
+}
+
+figure{
+    border: 1px solid darkgrey;
+    border-radius: 4px;
+    background-color: white;
+}
+
+figcaption{
+    font-size: 12pt;
+    text-align: center;
+    border-top: 1px solid darkgray;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    padding: 12px 16px
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+iframe{
+    margin: 0 auto;
+    display: block;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+th, td{
+    padding: 25px
+}

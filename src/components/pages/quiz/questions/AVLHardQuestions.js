@@ -1,0 +1,31 @@
+export const questions = [{
+    id: 0,
+    q: "Which data structure is related to the AVL Tree?",
+    a: [{text: "Red-Black Tree", isCorrect: false},
+        {text: "B + Tree", isCorrect: false},
+        {text: "B Tree", isCorrect: false},
+        {text: "Binary Search Tree", isCorrect: true},
+    ],
+    correctAnswer: "Binary Search Tree",
+},
+{
+    id: 1,
+    q: "If you were to continually add ever increasing nodes such as 15, 16, 17, 18, 19, 20, would you see a linked-list situation?",
+    a: [{text: "Always", isCorrect: false},
+        {text: "Sometimes", isCorrect: false},
+        {text: "Never", isCorrect: true},
+        {text: "Unlikely", isCorrect: false},
+    ],
+    correctAnswer: "Never",
+},
+{
+    id: 2,
+    q: "If you were to insert 15, 16, 17, 18, 19, 20, into an empty tree, which node would be the root node after 18 is deleted?",
+    a: [{text: "15", isCorrect: false},
+        {text: "17", isCorrect: true},
+        {text: "19", isCorrect: false},
+        {text: "20", isCorrect: false},
+    ],
+    correctAnswer: "17",
+}
+]

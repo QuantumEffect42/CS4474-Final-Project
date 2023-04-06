@@ -1,0 +1,14 @@
+.visualizer-container{
+    /* width: 70%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center; */
+}
+
+path.link{
+    fill: none;
+    stroke: black;
+}
+
