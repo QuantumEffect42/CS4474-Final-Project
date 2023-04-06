@@ -9,7 +9,7 @@ export const MenuItems = [
         submenu: [
             {
                 title: "Binary Search Trees",
-                url: "/CS4474-Final-Project/LearnBST"
+                url: "/LearnBST"
             },
             {
                 title: "AVL Trees",
